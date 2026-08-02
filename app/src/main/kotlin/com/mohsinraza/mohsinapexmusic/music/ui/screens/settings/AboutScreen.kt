@@ -116,7 +116,7 @@ private val leadDeveloper = Contributor(
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 private val collaborators = listOf(
     Contributor(name = "Abdullah", roleRes = R.string.credits_collaborator, githubHandle = "abdullahhdevx", polygon = MaterialShapes.Cookie4Sided),
-    Contributor(name = "Muhammad Bilal", roleRes = R.string.credits_collaborator, githubHandle = "muhammadbilal", polygon = MaterialShapes.Cookie7Sided),
+    Contributor(name = "Muhammad Bilal", roleRes = R.string.credits_collaborator, githubHandle = "xtechsavy", polygon = MaterialShapes.Cookie7Sided),
 )
 
 private val communityLinks = listOf(
@@ -406,11 +406,6 @@ fun AboutScreen(
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onSurface
-                )
-                Text(
-                    text = stringResource(R.string.owner_contact),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Text(
                     text = "Email: " + stringResource(R.string.developer_email),
