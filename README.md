@@ -194,9 +194,9 @@
 
 <h3>ApexTunes is free and open-source. If it brings you joy, consider supporting its development!</h3>
 
-#### Monero (XMR)
+#### Easypaisa QR (XMR)
 
-<img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/XMR.png" alt="Monero QR code" width="150" />
+<img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/XMR.png" alt="Easypaisa QR code" width="150" />
 
 ```text
 44XjSELSWcgJTZiCKzjpCQWyXhokrH9RqH3rpp35FkSKi57T25hniHWHQNhLeXyFn3DDYqufmfRB1iEtENerZpJc7xJCcqr
@@ -204,9 +204,8 @@
 
 #### Buy Me a Coffee
 
-<a href="https://www.buymeacoffee.com/mohsinraza">
-  <img src="https://github.com/example.com/your-repo/blob/main/assets/buymeacoffee.png?raw=true" alt="Buy Me a Coffee" width="150" />
-</a>
+<h3> scan qr given above, your small contribution can help us going a long way🫀!</h3>
+
 
 </div>
 
