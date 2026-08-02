@@ -2,6 +2,7 @@
 
 <img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="200" />
 
+
 # ApexTunes-Music
 
 ### YouTube Music client for Android
@@ -308,4 +309,3 @@ All trademarks, service marks, and intellectual property rights referenced in th
 **This project stands with Palestine 🇵🇸**
 
 </div>
-
