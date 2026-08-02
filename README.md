@@ -176,7 +176,7 @@
 
 [![Translation status](https://img.shields.io/weblate/progress/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://hosted.weblate.org/engage/ApexTunes/)
 
-<h3>We use Weblate to translate ApexTunes. <a href="https://hosted.weblate.org/projects/ApexTunes/">Help us bring MohsinApex-Music to more people!</a></h3>
+<h3>We use Weblate to translate ApexTunes. <a href="https://hosted.weblate.org/projects/ApexTunes/">Help us bring ApexTunes to more people!</a></h3>
 
 <a href="https://hosted.weblate.org/projects/ApexTunes/">
   <img src="https://hosted.weblate.org/widget/ApexTunes/horizontal-auto.svg" alt="Translation status" />
