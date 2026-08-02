@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/mohsinapex/ApexTunes/blob/main/fastlane/metadata/android/en-US/images/new_icon.png" alt="MohsinApex-Music app icon" width="200" />
+<img src="https://github.com/mohsinapex/ApexTunes/new_icon.png" alt="ApexTunes app icon" width="200" />
 
 # ApexTunes-Music
 
