@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/icon.png" alt="MohsinApex-Music app icon" width="200" />
+<img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="200" />
+
 
 # ApexTunes-Music
 
@@ -14,14 +15,13 @@
 
 <br/>
 
-[![Latest release](https://img.shields.io/github/v/release/example.com/your-repo?style=for-the-badge&labelColor=0d1117)](https://github.com/example.com/your-repo/releases)
-[![License](https://img.shields.io/github/license/example.com/your-repo?style=for-the-badge&labelColor=0d1117)](https://github.com/example.com/your-repo/blob/main/LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/example.com/your-repo/total?style=for-the-badge&labelColor=0d1117)](https://github.com/example.com/your-repo/releases)
+[![Latest release](https://img.shields.io/github/v/release/mohsinapex/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/releases)
+[![License](https://img.shields.io/github/license/mohsinapex/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/mohsinapex/ApexTunes/total?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/releases)
 
 <br/>
 
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white&labelColor=0d1117)](https://example.com/your-community)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d1117)](https://example.com/your-community)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0d1117)](https://t.me/mohsinapex)
 
 <br/>
 
@@ -30,25 +30,11 @@
 </div>
 
 > [!WARNING]
-> # MAINTENANCE MODE
-> ApexTunes is currently in maintenance mode. This means we will only be fixing bugs and making minor improvements. Please do not submit PRs for new features or major changes, as they will not be accepted.  
-> The app is **NOT** dead, please stay tuned for updates on our discord (found above).
-
-> [!WARNING]
 > **Regional Restriction** - If YouTube Music is unavailable in your region, this app will not work without a **VPN or proxy** connecting to a supported region.
 
 ---
 
 <div align="center">
-
-<h1><a id="screenshots"></a>Screenshots</h1>
-
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_1.png" alt="Home screen" width="30%" />
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_2.png" alt="Artist screen" width="30%" />
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_3.png" alt="Recognize music screen" width="30%" />
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_4.png" alt="Listen together screen" width="30%" />
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_5.png" alt="Player screen" width="30%" />
-<img src="https://github.com/example.com/your-repo/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_6.png" alt="Player lyrics screen" width="30%" />
 
 </div>
 
@@ -137,7 +123,7 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/example.com/your-repo/">
+      <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/mohsinapex/ApexTunes/">
         <img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png" alt="Download from Obtainium" height="40">
       </a>
     </td>
@@ -153,12 +139,12 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://www.openapk.net/MohsinApex-Music/com.mohsinraza.mohsinapexmusic.music/">
+      <a href="https://www.openapk.net/ApexTunes/com.mohsinraza.mohsinapexmusic.music/">
         <img src="https://www.openapk.net/images/openapk-badge.png" alt="Download from OpenAPK" height="60">
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/example.com/your-repo/releases/latest/download/MohsinApex-Music.apk">
+      <a href="https://github.com/mohsinapex/ApexTunes/releases/latest/download/ApexTunes.apk">
         <img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" alt="Download from GitHub" height="60">
       </a>
     </td>
@@ -173,7 +159,7 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://nightly.link/example.com/your-repo/workflows/build/main/app-with-Google-Cast.zip">
+      <a href="https://nightly.link/mohsinapex/ApexTunes/workflows/build/main/ApexTunes.zip">
         <img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" alt="Download from GitHub" height="75">
       </a>
     </td>
@@ -184,29 +170,20 @@
 
 ---
 
-<div align="center">
-
-<h1><a id="faq"></a>FAQ</h1>
-
-<h3>Got questions? Check out our <a href="https://example.com/your-site/#faq">FAQ page</a> for answers to the most common ones.</h3>
-
-</div>
-
----
 
 <div align="center">
 
 <h1><a id="translations"></a>Translations</h1>
 
-[![Translation status](https://img.shields.io/weblate/progress/MohsinApex-Music?style=for-the-badge&labelColor=0d1117)](https://hosted.weblate.org/engage/MohsinApex-Music/)
+[![Translation status](https://img.shields.io/weblate/progress/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://hosted.weblate.org/engage/ApexTunes/)
 
-<h3>We use Weblate to translate ApexTunes. <a href="https://hosted.weblate.org/projects/MohsinApex-Music/">Help us bring MohsinApex-Music to more people!</a></h3>
+<h3>We use Weblate to translate ApexTunes. <a href="https://hosted.weblate.org/projects/ApexTunes/">Help us bring ApexTunes to more people!</a></h3>
 
-<a href="https://hosted.weblate.org/projects/MohsinApex-Music/">
-  <img src="https://hosted.weblate.org/widget/MohsinApex-Music/horizontal-auto.svg" alt="Translation status" />
+<a href="https://hosted.weblate.org/projects/ApexTunes/">
+  <img src="https://hosted.weblate.org/widget/ApexTunes/horizontal-auto.svg" alt="Translation status" />
 </a>
 
-<h3>Thank you! Every translation makes MohsinApex-Music a little more accessible to someone, somewhere in the world.</h3>
+<h3>Thank you! Every translation makes ApexTunes a little more accessible to someone, somewhere in the world.</h3>
 
 </div>
 
@@ -218,19 +195,18 @@
 
 <h3>ApexTunes is free and open-source. If it brings you joy, consider supporting its development!</h3>
 
-#### Monero (XMR)
+#### Easypaisa QR (XMR)
 
-<img src="https://github.com/example.com/your-repo/blob/main/assets/XMR.png" alt="Monero QR code" width="150" />
+<img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/XMR.png" alt="Easypaisa QR code" width="150" />
 
 ```text
-44XjSELSWcgJTZiCKzjpCQWyXhokrH9RqH3rpp35FkSKi57T25hniHWHQNhLeXyFn3DDYqufmfRB1iEtENerZpJc7xJCcqt
+44XjSELSWcgJTZiCKzjpCQWyXhokrH9RqH3rpp35FkSKi57T25hniHWHQNhLeXyFn3DDYqufmfRB1iEtENerZpJc7xJCcqr
 ```
 
 #### Buy Me a Coffee
 
-<a href="https://www.buymeacoffee.com/mohsinraza">
-  <img src="https://github.com/example.com/your-repo/blob/main/assets/buymeacoffee.png?raw=true" alt="Buy Me a Coffee" width="150" />
-</a>
+<h3> scan qr given above, your small contribution can help us going a long way🫀!</h3>
+
 
 </div>
 
@@ -304,7 +280,7 @@
 
 <h3>This project wouldn't exist without these amazing people!</h3>
 
-<a href="https://github.com/example.com/your-repo/graphs/contributors">
+<a href="https://github.com/mohsinapex/ApexTunes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=example.com/your-repo" alt="Contributors" />
 </a>
 
@@ -333,4 +309,3 @@ All trademarks, service marks, and intellectual property rights referenced in th
 **This project stands with Palestine 🇵🇸**
 
 </div>
-
