@@ -7,11 +7,6 @@
 
 ### YouTube Music client for Android
 
-<br/>
-
-<a href="https://trendshift.io/repositories/20652" target="_blank">
-  <img src="https://trendshift.io/api/badge/repositories/20652" alt="example.com/your-repo | Trendshift" width="250" height="55" />
-</a>
 
 <br/>
 
