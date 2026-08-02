@@ -136,9 +136,10 @@ object Updater {
                     throw Exception("No releases found for this repository yet.")
                 }
                 
+                val tagName = json.optString("tag_name", "v0.0.0")
                 val releaseInfo = ReleaseInfo(
-                    tagName = json.optString("tag_name", "v0.0.0"),
-                    versionName = json.optString("name", "Unknown Version"),
+                    tagName = tagName,
+                    versionName = json.optString("name").takeIf { it.isNotBlank() } ?: tagName,
                     description = json.optString("body", "No description provided."),
                     releaseDate = json.optString("published_at", ""),
                     assets = parseAssets(json.optJSONArray("assets") ?: JSONArray())
@@ -185,12 +186,13 @@ object Updater {
                     
                     for (i in 0 until json.length()) {
                         val releaseObj = json.getJSONObject(i)
+                        val tagName = releaseObj.getString("tag_name")
                         releases.add(ReleaseInfo(
-                            tagName = releaseObj.getString("tag_name"),
-                            versionName = releaseObj.getString("name"),
-                            description = releaseObj.getString("body"),
-                            releaseDate = releaseObj.getString("published_at"),
-                            assets = parseAssets(releaseObj.getJSONArray("assets"))
+                            tagName = tagName,
+                            versionName = releaseObj.optString("name").takeIf { it.isNotBlank() } ?: tagName,
+                            description = releaseObj.optString("body", "No description provided."),
+                            releaseDate = releaseObj.optString("published_at", ""),
+                            assets = parseAssets(releaseObj.optJSONArray("assets") ?: JSONArray())
                         ))
                     }
                     
