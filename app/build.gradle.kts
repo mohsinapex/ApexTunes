@@ -108,7 +108,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = 150
-        versionName = "1.0.0-mohsin"
+        versionName = "1.0.0"
         resValue("string", "app_name", appNameOverride ?: "ApexTunes")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
