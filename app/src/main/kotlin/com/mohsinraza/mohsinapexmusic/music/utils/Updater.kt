@@ -1,5 +1,5 @@
 /**
- * ApexTunes Project (C) 2026
+ * MohsinApex-Music Project (C) 2026
  * Licensed under GPL-3.0 | See git history for contributors
  */
 
@@ -8,7 +8,6 @@ package com.mohsinraza.mohsinapexmusic.music.utils
 import com.mohsinraza.mohsinapexmusic.music.BuildConfig
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
-import io.ktor.client.request.header
 import io.ktor.client.statement.bodyAsText
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -38,9 +37,6 @@ object Updater {
     
     private var cachedReleaseInfo: ReleaseInfo? = null
     private var cachedAllReleases: List<ReleaseInfo> = emptyList()
-    
-    private var lastETag: String? = null
-    private var lastAllReleasesETag: String? = null
     
     private const val CHECK_INTERVAL_MILLIS = 2 * 60 * 60 * 1000L // 2 hours
     private const val GITHUB_API_BASE = "https://api.github.com/repos/mohsinapex/ApexTunes"
@@ -100,8 +96,8 @@ object Updater {
             
             // Parse architecture and variant from filename
             val (arch, variant) = when {
-                name == "ApexTunes.apk" -> "universal" to "foss"
-                name == "ApexTunes-with-Google-Cast.apk" -> "universal" to "gms"
+                name == "MohsinApex-Music.apk" -> "universal" to "foss"
+                name == "MohsinApex-Music-with-Google-Cast.apk" -> "universal" to "gms"
                 name.startsWith("app-") && name.endsWith("-release.apk") -> {
                     val arch = name.removePrefix("app-").removeSuffix("-release.apk")
                     arch to "foss"
@@ -132,39 +128,18 @@ object Updater {
                     return@runCatching cachedReleaseInfo!!
                 }
                 
-                val response = client.get("$GITHUB_API_BASE/releases/latest") {
-                    header("User-Agent", "ApexTunes-Android")
-                    lastETag?.let { header("If-None-Match", it) }
-                }
-
-                if (response.status.value == 304 && cachedReleaseInfo != null) {
-                    return@runCatching cachedReleaseInfo!!
-                }
-
-                val responseBody = response.bodyAsText()
-                val json = JSONObject(responseBody)
+                val response = client.get("$GITHUB_API_BASE/releases/latest")
+                    .bodyAsText()
+                val json = JSONObject(response)
                 
-                if (json.has("message")) {
-                    val message = json.getString("message")
-                    when {
-                        message.contains("Not Found", ignoreCase = true) -> 
-                            throw Exception("No releases found for this repository yet.")
-                        message.contains("rate limit", ignoreCase = true) -> 
-                            throw Exception("GitHub API rate limit exceeded. Please try again later.")
-                        else -> throw Exception("GitHub API error: $message")
-                    }
-                }
-
-                if (!json.has("tag_name")) {
-                    throw Exception("Failed to fetch release: Invalid response from GitHub")
+                if (json.has("message") && json.getString("message").contains("Not Found", ignoreCase = true)) {
+                    throw Exception("No releases found for this repository yet.")
                 }
                 
-                lastETag = response.headers["ETag"]
-                val tagName = json.getString("tag_name")
                 val releaseInfo = ReleaseInfo(
-                    tagName = tagName,
-                    versionName = json.optString("name").takeIf { it.isNotBlank() } ?: tagName,
-                    description = json.optString("body").takeIf { it.isNotBlank() } ?: "No description provided.",
+                    tagName = json.optString("tag_name", "v0.0.0"),
+                    versionName = json.optString("name", "Unknown Version"),
+                    description = json.optString("body", "No description provided."),
                     releaseDate = json.optString("published_at", ""),
                     assets = parseAssets(json.optJSONArray("assets") ?: JSONArray())
                 )
@@ -190,27 +165,18 @@ object Updater {
                 var hasMore = true
                 
                 while (hasMore && page <= 10) { // Limit to 10 pages
-                    val response = client.get("$GITHUB_API_BASE/releases?page=$page&per_page=30") {
-                        header("User-Agent", "ApexTunes-Android")
-                        if (page == 1) lastAllReleasesETag?.let { header("If-None-Match", it) }
-                    }
-
-                    if (page == 1 && response.status.value == 304 && cachedAllReleases.isNotEmpty()) {
-                        return@runCatching cachedAllReleases
-                    }
-
-                    val responseBody = response.bodyAsText()
+                    val response = client.get("$GITHUB_API_BASE/releases?page=$page&per_page=30")
+                        .bodyAsText()
                     
-                    if (responseBody.startsWith("{")) {
-                        val errorJson = JSONObject(responseBody)
+                    if (response.startsWith("{")) {
+                        val errorJson = JSONObject(response)
                         if (errorJson.has("message")) {
                             hasMore = false
                             break
                         }
                     }
                     
-                    if (page == 1) lastAllReleasesETag = response.headers["ETag"]
-                    val json = JSONArray(responseBody)
+                    val json = JSONArray(response)
                     
                     if (json.length() == 0) {
                         hasMore = false
@@ -219,13 +185,12 @@ object Updater {
                     
                     for (i in 0 until json.length()) {
                         val releaseObj = json.getJSONObject(i)
-                        val tagName = releaseObj.getString("tag_name")
                         releases.add(ReleaseInfo(
-                            tagName = tagName,
-                            versionName = releaseObj.optString("name").takeIf { it.isNotBlank() } ?: tagName,
-                            description = releaseObj.optString("body", "No description provided."),
-                            releaseDate = releaseObj.optString("published_at", ""),
-                            assets = parseAssets(releaseObj.optJSONArray("assets") ?: JSONArray())
+                            tagName = releaseObj.getString("tag_name"),
+                            versionName = releaseObj.getString("name"),
+                            description = releaseObj.getString("body"),
+                            releaseDate = releaseObj.getString("published_at"),
+                            assets = parseAssets(releaseObj.getJSONArray("assets"))
                         ))
                     }
                     
