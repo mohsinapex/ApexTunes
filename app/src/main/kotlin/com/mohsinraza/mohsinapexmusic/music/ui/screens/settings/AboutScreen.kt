@@ -115,8 +115,9 @@ private val leadDeveloper = Contributor(
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 private val collaborators = listOf(
-    Contributor(name = "Abdullah", roleRes = R.string.credits_collaborator, githubHandle = "abdullahhdevx", polygon = MaterialShapes.Cookie4Sided),
+   Contributor(name = "Ahsan Raza", roleRes = R.string.credits_collaborator, githubHandle = "ahsan-devx", polygon = MaterialShapes.Cookie4Sided),
     Contributor(name = "Muhammad Bilal", roleRes = R.string.credits_collaborator, githubHandle = "xtechsavy", polygon = MaterialShapes.Cookie7Sided),
+    Contributor(name = "Abdullah", roleRes = R.string.credits_collaborator, githubHandle = "abdullahhdevx", polygon = MaterialShapes.Cookie6Sided),
 )
 
 private val communityLinks = listOf(
