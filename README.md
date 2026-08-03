@@ -169,7 +169,6 @@
 <h3> International payments ? please reach out <a href="https://whatsapp.com/channel/0029VbD7VcTKbYMDv9CGcB1E">Whatsapp Channel</a>.
 
 
-#### Buy Me a Coffee
 
 <a href="https://www.buymeacoffee.com/mohsinapex">
   <img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/buymeacoffee.png?raw=true" alt="Buy Me a Coffee" width="150" />
