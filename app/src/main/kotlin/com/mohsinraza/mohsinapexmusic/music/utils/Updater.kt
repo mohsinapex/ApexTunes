@@ -166,7 +166,7 @@ object Updater {
                 val tagName = json.getString("tag_name")
                 val releaseInfo = ReleaseInfo(
                     tagName = tagName,
-                    versionName = json.optString("name").takeIf { it.isNotBlank() } ?: tagName,
+                   versionName = tagName.removePrefix("v"),
                     description = json.optString("body").takeIf { it.isNotBlank() } ?: "No description provided.",
                     releaseDate = json.optString("published_at", ""),
                     assets = parseAssets(json.optJSONArray("assets") ?: JSONArray())
@@ -225,7 +225,7 @@ object Updater {
                         val tagName = releaseObj.getString("tag_name")
                         releases.add(ReleaseInfo(
                             tagName = tagName,
-                            versionName = releaseObj.optString("name").takeIf { it.isNotBlank() } ?: tagName,
+                          versionName = tagName.removePrefix("v"),
                             description = releaseObj.optString("body", "No description provided."),
                             releaseDate = releaseObj.optString("published_at", ""),
                             assets = parseAssets(releaseObj.optJSONArray("assets") ?: JSONArray())
