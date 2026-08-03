@@ -165,9 +165,9 @@
 
 <img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/XMR.png" alt="Easypaisa QR code" width="150" />
 
-```text
-44XjSELSWcgJTZiCKzjpCQWyXhokrH9RqH3rpp35FkSKi57T25hniHWHQNhLeXyFn3DDYqufmfRB1iEtENerZpJc7xJCcqr
-```
+
+<h3> International payments ? please reach out <a href="https://whatsapp.com/channel/0029VbD7VcTKbYMDv9CGcB1E">Whatsapp Channel</a>.
+
 
 #### Buy Me a Coffee
 
