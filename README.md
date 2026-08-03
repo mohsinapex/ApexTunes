@@ -170,7 +170,7 @@
 
 
 
-<a href="https://www.buymeacoffee.com/mohsinapex">
+
   <img src="https://github.com/mohsinapex/ApexTunes/blob/main/assets/buymeacoffee.png?raw=true" alt="Buy Me a Coffee" width="150" />
 </a>
 
