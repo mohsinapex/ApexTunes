@@ -24,7 +24,7 @@
 
 > [!WARNING]
 > # PRODUCTION PHASE
-> The app is **NOT** dead, please stay tuned for updates on our whatsapp channel (found above).
+> The app is **NOT** dead, please stay tuned for updates on our whatsapp channel (found above). Must report any bugs or crashes you faced in the app, this helps us to improve ApexTunes Music Application.
 
 > [!WARNING]
 > **Regional Restriction** - If YouTube Music is unavailable in your region, this app will not work without a **VPN or proxy** connecting to a supported region.
