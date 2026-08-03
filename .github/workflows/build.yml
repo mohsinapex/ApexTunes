@@ -54,7 +54,7 @@ steps:
     run: ./gradlew --console=plain assemble${{ matrix.variantName }}Release :app:lint${{ matrix.variantName }}Release --warning-mode summary  
     env:  
       APEXTUNES_APPLICATION_ID: com.mohsinraza.mohsinapexmusic  
-      APEXTUNES_APP_NAME: ApexTunes Nightly  
+      APEXTUNES_APP_NAME: ApexTunes 
       PULL_REQUEST: "false"  
       GITHUB_EVENT_NAME: ${{ github.event_name }}  
       LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}  
