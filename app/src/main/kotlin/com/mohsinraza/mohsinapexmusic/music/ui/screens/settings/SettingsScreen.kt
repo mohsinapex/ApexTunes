@@ -266,7 +266,10 @@ fun SettingsScreen(
                 }
             }
         )
-    if (BuildConfig.UPDATER_AVAILABLE && latestVersionName != BuildConfig.VERSION_NAME) {
+    if (BuildConfig.UPDATER_AVAILABLE && 
+        latestVersionName.isNotBlank() && 
+        latestVersionName != "v0.0.0" && 
+        Updater.isUpdateAvailable(BuildConfig.VERSION_NAME, latestVersionName)) {
             Spacer(modifier = Modifier.height(16.dp))
             ReleaseNotesCard()
         }

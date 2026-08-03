@@ -61,10 +61,11 @@ fun UpdaterScreen(
 
     val context = LocalContext.current
     var isChecking by remember { mutableStateOf(false) }
-    var updateAvailable by remember { mutableStateOf(false) }
-    var latestVersion by remember { mutableStateOf<String?>(null) }
+    val cachedRelease = remember { Updater.getCachedLatestRelease() }
+    var updateAvailable by remember { mutableStateOf(cachedRelease != null && Updater.isUpdateAvailable(BuildConfig.VERSION_NAME, cachedRelease.versionName)) }
+    var latestVersion by remember { mutableStateOf<String?>(cachedRelease?.versionName) }
     var showChangelog by remember { mutableStateOf(false) }
-    var changelogContent by remember { mutableStateOf<String?>(null) }
+    var changelogContent by remember { mutableStateOf<String?>(cachedRelease?.description) }
     var checkError by remember { mutableStateOf<String?>(null) }
     val failedToCheckUpdatesTemplate = stringResource(R.string.failed_to_check_updates)
 
@@ -179,7 +180,7 @@ fun UpdaterScreen(
                         title = {
                             if (isChecking) {
                                 Text(stringResource(R.string.checking_for_updates))
-                            } else if (latestVersion != null) {
+                            } else if (latestVersion != null && latestVersion != "v0.0.0") {
                                 Text(stringResource(R.string.latest_version_format, latestVersion!!))
                             } else {
                                 Text(stringResource(R.string.check_for_updates_button))

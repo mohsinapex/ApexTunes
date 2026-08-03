@@ -780,13 +780,13 @@ class MainActivity : ComponentActivity() {
 
                 val navPadding =
                     if (shouldShowNavigationBar && !showRail) {
-                        if (slimNav) SlimNavBarHeight else NavigationBarHeight
+                        (if (slimNav) SlimNavBarHeight else NavigationBarHeight) + 12.dp
                     } else {
                         0.dp
                     }
 
                 val navigationBarHeight by animateDpAsState(
-                    targetValue = if (shouldShowNavigationBar && !showRail) NavigationBarHeight else 0.dp,
+                    targetValue = if (shouldShowNavigationBar && !showRail) (if (slimNav) SlimNavBarHeight else NavigationBarHeight) + 12.dp else 0.dp,
                     animationSpec = NavigationBarAnimationSpec,
                     label = "navBarHeight",
                 )
@@ -961,7 +961,7 @@ class MainActivity : ComponentActivity() {
                 val currentTitleRes =
                     remember(navBackStackEntry) {
                         when (navBackStackEntry?.destination?.route) {
-                            Screens.Home.route -> R.string.home
+                            Screens.Home.route -> R.string.ApexTunes
                             Screens.Search.route -> R.string.search
                             Screens.Library.route -> R.string.filter_library
                             Screens.ListenTogether.route -> R.string.together
@@ -1145,7 +1145,7 @@ class MainActivity : ComponentActivity() {
                                 }
 
                             // Pre-calculate values for graphicsLayer to avoid reading state during composition
-                            val navBarTotalHeight = bottomInset + NavigationBarHeight
+                            val navBarTotalHeight = bottomInset + (if (slimNav) SlimNavBarHeight else NavigationBarHeight) + 12.dp
 
                             if (!showRail && currentRoute != "wrapped") {
                                 Box {
@@ -1182,7 +1182,7 @@ class MainActivity : ComponentActivity() {
                                                             val progress = playerBottomSheetState.progress.coerceIn(0f, 1f)
                                                             val slideOffset = totalHeightPx * progress
                                                             val hideOffset =
-                                                                totalHeightPx * (1 - navBarHeightPx / NavigationBarHeight.toPx())
+                                                                totalHeightPx * (1 - navBarHeightPx / ((if (slimNav) SlimNavBarHeight else NavigationBarHeight) + 12.dp).toPx())
                                                             slideOffset + hideOffset
                                                         }
                                                 },
