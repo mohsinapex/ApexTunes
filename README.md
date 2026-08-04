@@ -186,7 +186,6 @@
 <h3>ApexTunes music app developed by Mohsin Raza stands on the shoulders of incredible open-source work.</h3>
 
 <h3>Main Inspirations</h3>
-
 <table>
   <thead>
     <tr>
