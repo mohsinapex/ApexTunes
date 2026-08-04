@@ -249,7 +249,7 @@
 
 <h1>Contributors</h1>
 
-<h3>This project wouldn't exist without these amazing people!</h3>
+<h3>This project wouldn't exist without these amazing people✨!</h3>
 
 <a href="https://github.com/mohsinapex/ApexTunes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mohsinapex/ApexTunes" alt="Contributors" />
