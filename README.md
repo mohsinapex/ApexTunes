@@ -83,7 +83,7 @@
     <td width="50%" valign="top">
 
 #### Social
-- Listen together with friends in real-time
+- Listen together with   friends in real-time
 
 </td>
     <td width="50%" valign="top">
