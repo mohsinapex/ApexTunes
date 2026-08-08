@@ -114,8 +114,8 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="www.apextunes.eu.cc">
-      <img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="50" />
+      <img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="100" />
+       <a href="www.apextunes.eu.cc">
       </a>
     </td>
   </tr>
