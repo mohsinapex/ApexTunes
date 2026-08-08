@@ -118,6 +118,7 @@
       <img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="50" />
       </a>
     </td>
+  </tr>
   <tr>
     <th align="center">GitHub</th>
   </tr>
