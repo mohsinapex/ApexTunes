@@ -115,7 +115,7 @@
   <tr>
     <td align="center">
       <a href="www.apextunes.eu.cc/download">
-        <img src="https://github.com/mohsinapex/ApexTunes/blob/new_icon.png" alt="Download from Official Website" height="40">
+      <img src="https://github.com/mohsinapex/ApexTunes/blob/main/new_icon.png" alt="ApexTunes app icon" width="50" />
       </a>
     </td>
   <tr>
