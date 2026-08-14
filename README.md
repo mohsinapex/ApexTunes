@@ -252,7 +252,6 @@
 
 This project is **not affiliated with, funded, authorized, endorsed by, or in any way associated** with YouTube, Google LLC, ApexTunes Group LLC, or any of their affiliates and subsidiaries.
 
-All trademarks, service marks, and intellectual property rights referenced in this project belong to their respective owners.
 
 </div>
 
