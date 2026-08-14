@@ -4,8 +4,7 @@
 
 # ApexTunes
 
-### YouTube Music client for Android - Ad-free - Offline listening - Background playback
-
+### 
 <br/>
 
 [![Latest release](https://img.shields.io/github/v/release/mohsinapex/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/releases)
