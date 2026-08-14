@@ -228,7 +228,8 @@
 
 <h3>We also thank the entire open-source community! For every library, tool, and API that powers this project.</h3>
 
-</div>
+</div> 
+
 
 ---
 
@@ -252,7 +253,7 @@
 
 This project is **not affiliated with, funded, authorized, endorsed by, or in any way associated** with YouTube, Google LLC, ApexTunes Group LLC, or any of their affiliates and subsidiaries.
 
-
+All trademarks, service marks, and intellectual property rights referenced in this project belong to their respective owners.
 </div>
 
 ---
