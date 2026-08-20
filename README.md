@@ -41,7 +41,7 @@
     <td width="50%" valign="top">
 
 #### Playback
-- Stream any song or video from YouTube Music
+- Stream any song from Internet
 - Ad free experience
 - Background playback
 - Download & cache for offline use
