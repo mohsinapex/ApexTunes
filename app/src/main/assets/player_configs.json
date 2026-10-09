@@ -449,6 +449,10 @@
     "ec429320": { "sig": "lF(40,5835,INPUT)", "nClass": "Ay", "sts": 20733 },
     "73252d67": { "sig": "G9(7,6899,INPUT)", "nClass": "BG", "sts": 20734, "aliases": ["68f28071"] },
     "a9596022": { "sig": "G9(7,6899,INPUT)", "nClass": "BG", "sts": 20734 },
-    "adbaabd3": { "sig": "wG(7,6899,INPUT)", "nClass": "pE", "sts": 20734, "aliases": ["6d9f8d21"] }
+    "adbaabd3": { "sig": "wG(7,6899,INPUT)", "nClass": "pE", "sts": 20734, "aliases": ["6d9f8d21"] },
+    "99afa6f1": { "sig": "Hw(7,6899,INPUT)", "nClass": "vF", "sts": 20734, "aliases": ["bb06c5fa"] },
+    "6e539070": { "sig": "Hw(7,6899,INPUT)", "nClass": "vF", "sts": 20734 },
+    "24c7e547": { "sig": "Hw(7,6899,INPUT)", "nClass": "vF", "sts": 20734 },
+    "8c76af16": { "sig": "sx(3,8741,INPUT)", "nClass": "dZ", "sts": 20735, "aliases": ["786c8c02"] }
   }
 }
