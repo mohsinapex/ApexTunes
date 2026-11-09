@@ -9,7 +9,7 @@
 <br/>
 
 [![Latest release](https://img.shields.io/github/v/release/mohsinapex/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/releases)
-[![License](https://img.shields.io/github/license/mohsinapex/ApexTunes?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/blob/main/LICENSE)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/mohsinapex/ApexTunes/total?style=for-the-badge&labelColor=0d1117)](https://github.com/mohsinapex/ApexTunes/releases)
 
 <br/>
