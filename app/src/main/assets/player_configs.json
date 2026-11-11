@@ -583,6 +583,11 @@
     "958a9d9b": { "sig": "QD(15,3588,INPUT)", "nClass": "nO", "sts": 20766, "aliases": ["50044296"] },
     "8b2685e5": { "sig": "ZB(67,3409,INPUT)", "nClass": "Jv", "sts": 20767, "aliases": ["e28c829a"] },
     "4655a80e": { "sig": "ZB(67,3409,INPUT)", "nClass": "Jv", "sts": 20767 },
-    "d19f44f5": { "sig": "ZB(67,3409,INPUT)", "nClass": "Jv", "sts": 20767 }
+    "d19f44f5": { "sig": "ZB(67,3409,INPUT)", "nClass": "Jv", "sts": 20767 },
+    "2e127273": { "sig": "ZB(67,3409,INPUT)", "nClass": "Jv", "sts": 20767 },
+    "fad7e4e9": { "sig": "hj(67,3409,INPUT)", "nClass": "io", "sts": 20767, "aliases": ["b1dea243"] },
+    "62e2110d": { "sig": "hj(67,3409,INPUT)", "nClass": "io", "sts": 20767 },
+    "027f738a": { "sig": "ge(67,3409,INPUT)", "nClass": "Do", "sts": 20767, "aliases": ["8784e2c2"] },
+    "b48cc81f": { "sig": "Fq(40,483,INPUT)", "nClass": "uj", "sts": 20768, "aliases": ["ebacb975"] }
   }
 }
