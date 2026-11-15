@@ -1,6 +1,6 @@
 ---v13.6.1
-# THE FUTURE OF MohsinApex-Music
-The new Kotlin Multiplatform version of MohsinApex-Music is now in a good state, and we are aiming to release it within the next month. Until then, the current app will remain in maintenance mode and receive bug fixes and minor improvements.
+# THE FUTURE OF APEXTUNES
+The new Kotlin Multiplatform version of ApexTunes is now in a good state, and we are aiming to release it within the next month. Until then, the current app will remain in maintenance mode and receive bug fixes and minor improvements.
 
 # Major changes
 - Improved playback reliability and recovery from YouTube player failures (@alltechdev @JASK625 @kairosci @mohsinraza @nyxiereal)
