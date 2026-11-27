@@ -4,7 +4,7 @@
 
 # ApexTunes
 
-### YouTube Music client for Android - Ad-free - Offline listening - Background playbak
+### YouTube Music client for Android - Ad-free - Offline listening - Background playback
 
 <br/>
 
